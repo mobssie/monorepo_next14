@@ -1,2 +1,1 @@
-# react_devidend
-react_devidend
+# monorepo_next14
