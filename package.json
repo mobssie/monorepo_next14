@@ -1,6 +1,11 @@
 {
-  "private": true,
+  "name": "monorepo_next14",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "packageManager": "yarn@4.1.1",
+  "scripts": {
+    "ds": "yarn workspace @monorepo/design-system",
+    "service": "yarn workspace @monorepo/service"
+  }
 }
