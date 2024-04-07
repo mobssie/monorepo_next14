@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/service/admin",
+  "name": "@monorepo/service_react-admin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
