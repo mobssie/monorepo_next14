@@ -6,8 +6,13 @@
     "apps/*"
   ],
   "packageManager": "yarn@4.1.1",
+  "engines": {
+    "node": ">=18",
+    "yarn": ">=4",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
-    "ds": "yarn workspace @monorepo/design-system",
-    "service": "yarn workspace @monorepo/service"
+    "dev:na": "yarn workspace @monorepo/next-admin dev",
+    "dev:ra": "yarn workspace @monorepo/react-admin dev"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["../service/next-admin/src/*"]
+    }
+  },
+  "include": ["../service/next-admin/next-env.d.ts", "../service/next-admin/**/*.ts", "../service/next-admin/**/*.tsx", "../service/next-admin/.next/types/**/*.ts"],
+  "exclude": ["../service/next-admin/node_modules"]
+}
