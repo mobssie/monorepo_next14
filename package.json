@@ -1,7 +1,8 @@
 {
   "name": "monorepo_next14",
   "workspaces": [
-    "packages/*",
+    "packages/ui/*",
+    "packages/utils/*",
     "apps/*"
   ],
   "packageManager": "yarn@4.1.1",
