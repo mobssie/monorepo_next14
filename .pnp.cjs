@@ -41,6 +41,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["semver", "npm:7.6.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -15017,7 +15018,8 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["monorepo_next14", "workspace:."]\
+          ["monorepo_next14", "workspace:."],\
+          ["semver", "npm:7.6.0"]\
         ],\
         "linkType": "SOFT"\
       }]\

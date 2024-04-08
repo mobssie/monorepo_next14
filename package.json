@@ -14,5 +14,8 @@
   "scripts": {
     "dev:na": "yarn workspace @monorepo/next-admin dev",
     "dev:ra": "yarn workspace @monorepo/react-admin dev"
+  },
+  "dependencies": {
+    "semver": "^7.6.0"
   }
 }
