@@ -3,7 +3,10 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "eslint.workingDirectories": ["apps", "packages"],
+  "eslint.workingDirectories": [
+    "apps",
+    "packages"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
