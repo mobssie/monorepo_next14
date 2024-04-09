@@ -2,7 +2,7 @@
   "name": "monorepo_next14",
   "workspaces": [
     "packages/ui/*",
-    "packages/utils/*",
+    "packages/*",
     "apps/*"
   ],
   "packageManager": "yarn@4.1.1",
@@ -17,5 +17,16 @@
   },
   "dependencies": {
     "semver": "^7.6.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.5"
   }
 }
