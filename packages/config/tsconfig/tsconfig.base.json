@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Base",
+  "compilerOptions": {
+    "noEmit": true, // TypeScript 컴파일러가 JS 파일을 출력하지 않도록 설정합니다. 타입 체크만 수행
+    "outDir": "compiled",// 컴파일된 파일이 저장될 디렉토리를 지정
+    "lib": ["dom", "dom.iterable", "esnext"], // 컴파일에 포함될 라이브러리 파일 목록
+    "allowJs": true, // JavaScript 파일(.js)이 TypeScript 프로젝트에 포함될 수 있도록 허용ㄴ
+    "strict": true, // 모든 엄격한 타입 체킹 옵션을 활성화
+    "strictNullChecks": true, // null과 undefined를 모든 타입에서 제외
+    "pretty": true, // 오류 메시지를 보기 좋게 출력
+    "forceConsistentCasingInFileNames": true, // 파일 이름의 대소문자가 일관되지 않는 것을 오류로 간주
+    "module": "esnext", // 사용할 모듈 시스템을 지정, esnext는 최신 ECMAScript 모듈을 의미
+    "moduleResolution": "node", // 모듈 해석 전략을 지정. node는 Node.js의 모듈 해석 방식
+    "resolveJsonModule": true, // .json 파일을 모듈로 임포트할 수 있도록 허용
+    "isolatedModules": true, // 각 파일을 별도의 모듈로 변환해야 함
+    "skipLibCheck": true, // 선언 파일(.d.ts)의 타입 체크를 건너뜀
+    "esModuleInterop": true, // CommonJS 모듈과 ES6 모듈 간의 호환성을 개선
+    "composite": false, // 프로젝트 참조를 활성화하여 여러 프로젝트를 함께 빌드
+    "declaration": true, // 타입 선언 파일(.d.ts)을 생성
+    "declarationMap": true, // 타입 선언 파일에 대한 소스 맵을 생성
+    "target": "ES6", // 컴파일된 JavaScript의 ECMAScript 대상 버전을 지정. ES6는 ECMAScript 2015와 동일
+    "incremental": true, // 이전 컴파일 정보를 사용하여 다음 컴파일 속도를 향상
+    "jsx": "preserve", // JSX 코드를 처리하는 방식을 설정, preserve는 JSX 코드를 그대로 유지하며, JSX 변환은 다른 도구(예: Babel)가 처리
+    "plugins": [
+      // TypeScript를 확장하는 플러그인을 지정
+      {
+        "name": "next" // next 플러그인이 사용
+      }
+    ],
+    "paths": {
+    }
+  },
+  // Storybook
+  "ts-node": {
+    // ts-node를 사용할 때의 컴파일러 옵션을 별도로 지정
+    "compilerOptions": {
+      "module": "CommonJS" // 듈 시스템으로 CommonJS를 사용하도록 설정
+    }
+  }
+}
