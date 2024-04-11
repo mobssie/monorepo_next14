@@ -1,7 +1,10 @@
 {
   "name": "monorepo_next14",
+  "private": true,
   "workspaces": [
+    "packages/design/*",
     "packages/ui/*",
+    "packages/utils/*",
     "packages/*",
     "apps/*"
   ],
@@ -16,6 +19,7 @@
     "dev:ra": "yarn workspace @monorepo/react-admin dev"
   },
   "dependencies": {
+    "color-convert": "^2.0.1",
     "semver": "^7.6.0"
   },
   "devDependencies": {
@@ -27,6 +31,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
   }
 }
