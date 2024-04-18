@@ -5,6 +5,7 @@
     "packages/design/*",
     "packages/ui/*",
     "packages/utils/*",
+    "packages/config/*",
     "packages/*",
     "apps/*"
   ],
@@ -15,6 +16,8 @@
     "npm": "please-use-yarn"
   },
   "scripts": {
+    "nextadmin": "yarn workspace @monorepo/next-admin",
+    "reactadmin": "yarn workspace @monorepo/react-admin",
     "dev:na": "yarn workspace @monorepo/next-admin dev",
     "dev:ra": "yarn workspace @monorepo/react-admin dev"
   },
