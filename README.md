@@ -18,3 +18,6 @@
 # 패키지 매니저   
 yarn berry  
 
+# 실행
+yarn run dev:next
+yarn run dev:react

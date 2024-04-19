@@ -16,25 +16,58 @@
     "npm": "please-use-yarn"
   },
   "scripts": {
-    "nextadmin": "yarn workspace @monorepo/next-admin",
-    "reactadmin": "yarn workspace @monorepo/react-admin",
-    "dev:na": "yarn workspace @monorepo/next-admin dev",
-    "dev:ra": "yarn workspace @monorepo/react-admin dev"
+    "next": "yarn workspace @monorepo/next-admin",
+    "react": "yarn workspace @monorepo/react-admin",
+    "dev:next": "yarn workspace @monorepo/next-admin dev --port 8081",
+    "dev:react": "yarn workspace @monorepo/react-admin dev --port 8082",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
-  "dependencies": {
+  "resolutions": {
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.0",
+    "@storybook/addon-actions": "8.0.1",
+    "@storybook/addon-essentials": "8.0.1",
+    "@storybook/addon-interactions": "8.0.1",
+    "@storybook/addon-links": "8.0.1",
+    "@storybook/addon-onboarding": "8.0.1",
+    "@storybook/addon-viewport": "8.0.1",
+    "@storybook/addons": "7.6.17",
+    "@storybook/nextjs": "8.0.1",
+    "@storybook/react": "8.0.1",
+    "@storybook/theming": "8.0.1",
+    "@types/node": "20.11.29",
     "color-convert": "^2.0.1",
-    "semver": "^7.6.0"
+    "next": "14.1.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "semver": "^7.6.0",
+    "storybook": "8.0.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.6.0",
-    "@typescript-eslint/parser": "^7.6.0",
-    "eslint": "^9.0.0",
-    "eslint-config-prettier": "^9.1.0",
+    "@chromatic-com/storybook": "^1.3.3",
+    "@storybook/addon-essentials": "^8.0.8",
+    "@storybook/addon-interactions": "^8.0.8",
+    "@storybook/addon-links": "^8.0.8",
+    "@storybook/addon-onboarding": "^8.0.8",
+    "@storybook/blocks": "^8.0.8",
+    "@storybook/nextjs": "^8.0.8",
+    "@storybook/react": "^8.0.8",
+    "@storybook/test": "^8.0.8",
+    "@types/react": "18.2.67",
+    "@types/react-dom": "18.2.22",
+    "@typescript-eslint/eslint-plugin": "7.3.1",
+    "@typescript-eslint/parser": "7.3.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-react": "7.34.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prettier": "3.2.5",
+    "storybook": "^8.0.8",
+    "typescript": "5.4.2"
   }
 }
