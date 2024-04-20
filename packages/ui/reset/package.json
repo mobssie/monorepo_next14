@@ -1,4 +1,14 @@
 {
   "name": "@monorepo/ui-reset",
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "import": "./reset.css",
+      "require": "./reset.css"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "pretendard": "1.3.8"
+  }
 }

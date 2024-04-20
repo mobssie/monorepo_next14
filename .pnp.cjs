@@ -4812,7 +4812,8 @@ const RAW_RUNTIME_STATE =
       ["workspace:packages/ui/reset", {\
         "packageLocation": "./packages/ui/reset/",\
         "packageDependencies": [\
-          ["@monorepo/ui-reset", "workspace:packages/ui/reset"]\
+          ["@monorepo/ui-reset", "workspace:packages/ui/reset"],\
+          ["pretendard", "npm:1.3.8"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -22596,6 +22597,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../.yarn/berry/cache/prelude-ls-npm-1.2.1-3e4d272a55-10.zip/node_modules/prelude-ls/",\
         "packageDependencies": [\
           ["prelude-ls", "npm:1.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["pretendard", [\
+      ["npm:1.3.8", {\
+        "packageLocation": "../../../../.yarn/berry/cache/pretendard-npm-1.3.8-667aa365cf-10.zip/node_modules/pretendard/",\
+        "packageDependencies": [\
+          ["pretendard", "npm:1.3.8"]\
         ],\
         "linkType": "HARD"\
       }]\
