@@ -1,14 +1,4 @@
-import type { Preview } from '@storybook/react'
+import { baseStorybookPreview } from '@monorepo/config-storybook';
+import '@monorepo/ui-reset';
 
-const preview: Preview = {
-  parameters: {
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
-    },
-  },
-}
-
-export default preview
+export default { ...baseStorybookPreview };
