@@ -57,5 +57,8 @@
     "react": "*",
     "react-dom": "*",
     "typescript": "*"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.29.2"
   }
 }
